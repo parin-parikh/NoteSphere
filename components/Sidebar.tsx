@@ -46,6 +46,8 @@ function Sidebar() {
   useEffect(() => {
     if (!data) return;
 
+    console.log("Retrieved data: ", data.docs);
+
     const grouped = data.docs.reduce<{
       owner: RoomDocument[];
       editor: RoomDocument[];
@@ -72,6 +74,8 @@ function Sidebar() {
       }
     )
 
+    console.log("Grouped data: ", grouped);
+
     setGroupedData(grouped);
   }, [data])
 
@@ -94,19 +98,19 @@ function Sidebar() {
               ))}
             </>
           )}
+
+          {/* Shared with Me */}
+          {groupedData.editor.length > 0 && (
+            <>
+              <h2 className="text-gray-500 font-semibold text-sm">
+                Shared with Me
+              </h2>
+              {groupedData.editor.map((doc) => (
+                <SidebarOptions key={doc.id} id={doc.id} href={`/doc/${doc.id}`} />
+              ))}
+            </>
+          )}
         </div>
-        
-        {/* Shared with Me */}
-        {groupedData.editor.length > 0 && (
-          <>
-            <h2 className="text-gray-500 font-semibold text-sm">
-              Shared with Me
-            </h2>
-            {groupedData.editor.map((doc) => {
-              <SidebarOptions key={doc.id} id={doc.id} href={`/doc/${doc.id}`} />
-            })}
-          </>
-        )}
     </>
   );
 
@@ -120,11 +124,8 @@ function Sidebar() {
             <SheetContent side={'left'}>
                 <SheetHeader>
                     <SheetTitle>Menu</SheetTitle>
-                        <div>
-                            {/* Options */}
-                            {menuOptions}
-                        </div>
-                    </SheetHeader>
+                      <div>{menuOptions}</div>
+                </SheetHeader>
             </SheetContent>
         </Sheet>
       </div>
