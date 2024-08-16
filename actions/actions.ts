@@ -82,6 +82,4 @@ export async function removeUserFromDocument(roomId: string, email: string) {
       console.error(error);
       return { success: false };
     }
-
-    
 }

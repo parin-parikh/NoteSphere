@@ -40,6 +40,7 @@
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.1",
+    "vercel": "^36.0.0",
     "yjs": "^13.6.18"
   },
   "devDependencies": {

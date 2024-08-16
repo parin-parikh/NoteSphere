@@ -66,7 +66,6 @@ function DeleteDocument() {
             </DialogFooter>
         </DialogContent>
     </Dialog>
-
   )
 }
 export default DeleteDocument
