@@ -64,7 +64,6 @@ function InviteUser() {
             </form>
         </DialogContent>
     </Dialog>
-
   )
 }
 export default InviteUser
