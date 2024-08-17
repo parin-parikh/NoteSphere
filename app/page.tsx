@@ -75,7 +75,7 @@ export default function Home() {
               <FaComments className="text-gray-600 text-4xl mb-2" />
               <h3 className="text-lg font-semibold text-gray-800">Conversational AI</h3>
               <p className="text-gray-600">
-                Our conversational AI, powered by OpenAI's ChatGPT, engages users in natural dialogue, offering immediate responses and interactive experiences.
+                Our conversational AI, powered by OpenAIs ChatGPT, engages users in natural dialogue, offering immediate responses and interactive experiences.
               </p>
             </div>
           </div>
