@@ -1,6 +1,6 @@
 import { ArrowLeftCircle } from "lucide-react";
 import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/nextjs";
-import { FaPlug, FaUsers, FaShieldAlt, FaDesktop, FaTags, FaFileAlt, FaCloud, FaSync, FaCalendarCheck, FaGlobe, FaComments } from "react-icons/fa";
+import { FaUsers, FaShieldAlt, FaDesktop, FaTags, FaFileAlt, FaCloud, FaGlobe, FaComments } from "react-icons/fa";
 
 export default function Home() {
   return (
